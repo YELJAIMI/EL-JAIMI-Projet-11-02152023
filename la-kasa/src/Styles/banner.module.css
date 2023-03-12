@@ -1,13 +1,15 @@
-/* .banner {
+.banner {
 	position: relative;
 	height: 223px;
 	margin-top: 60px;
 }
 .banner img {
 	border-radius: 25px;
+	margin-left: 65px;
+	margin-top: -2em;
 	object-fit: cover;
 	height: 100%;
-	width: 100%;
+	width: 90%;
 }
 
 .banner h2 {
@@ -15,7 +17,7 @@
 	font-family: 500;
 	font-size: 48px;
 	position: absolute;
-	top: 50%;
+	top: 18%;
 	left: 50%;
 	right: 0;
 	bottom: 0;
@@ -53,4 +55,4 @@
 		white-space: normal;
 		left: 35%;
 	}
-} */
+}
