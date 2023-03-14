@@ -1,4 +1,4 @@
-/* .carousel {
+.carousel {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -48,4 +48,4 @@ button.nextSlide {
 	.chevron {
 		font-size: 35px;
 	}
-} */
+}
