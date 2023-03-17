@@ -35,8 +35,8 @@ function LocationInfo({ locations }) {
 							</div>
 						</div>
 						<div className={styles.custom_accordion}>
-							<Accordion title="Description">{location.description}</Accordion>
-							<Accordion title="Équipements">
+							<Accordion title="Description" isOpen={true}>{location.description}</Accordion>
+							<Accordion title="Équipements" isOpen={true}>
 								{location.equipments.map((elt, idx) => (
 									<li key={idx}>{elt}</li>
 								))}

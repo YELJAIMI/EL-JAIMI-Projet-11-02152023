@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 function header() {
   return (
     <header>
+        <nav> 
         <h1>
             <img src={Logo} alt="logo Kasa" />
         </h1>
@@ -21,6 +22,7 @@ function header() {
                 <li>A Propos</li>
             </NavLink>
         </ul>
+        </nav>
 
 </header>
   )

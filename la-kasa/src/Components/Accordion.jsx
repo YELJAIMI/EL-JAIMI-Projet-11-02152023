@@ -3,8 +3,8 @@ import styles from "../Styles/accordion.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-function Accordion({ title, children }) {
-	const [visiblity, setVisiblity] = useState(false);
+function Accordion({ title, children, isOpen = false }) {
+	const [visiblity, setVisiblity] = useState(isOpen);
 
 	const toogleVisiblity = () => {
 		setVisiblity((v) => !v);

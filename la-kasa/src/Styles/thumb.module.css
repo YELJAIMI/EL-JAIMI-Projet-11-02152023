@@ -5,7 +5,7 @@
 	border-radius: 10px;
 	max-width: 340px;
 	height: 340px;
-	background-color: #000000;
+	background: linear-gradient(180deg, rgb(244, 96, 96) 0%, rgba(249, 73, 73, 0) 50%);
 }
 
 .location img {
@@ -14,6 +14,7 @@
 	height: 340px;
 	opacity: 0.7;
 	border-radius: 10px;
+	background: #FF6060;
 }
 
 .title {

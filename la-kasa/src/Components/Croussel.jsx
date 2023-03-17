@@ -15,8 +15,10 @@ function Carousel({ pictures }) {
 	}
 
 	function prevSlide() {
-		setCurrent(current === 0 ? length - 1 : current - 1);
-	}
+		setCurrent((prevCurrent) => { 
+			return prevCurrent === 0 ? length - 1 : current - 1;
+		});
+		}
 
 	return (
 		<>
@@ -24,7 +26,7 @@ function Carousel({ pictures }) {
 				<button
 					className={styles.prevSlide}
 					onClick={() => {
-						nextSlide();
+						prevSlide();
 					}}
 				>
 					<FontAwesomeIcon icon={faChevronLeft} className={styles.chevron} />
@@ -35,11 +37,15 @@ function Carousel({ pictures }) {
 				<button
 					className={styles.nextSlide}
 					onClick={() => {
-						prevSlide();
+						nextSlide();
 					}}
 				>
 					<FontAwesomeIcon icon={faChevronRight} className={styles.chevron} />
 				</button>
+			</div>
+			<div className={styles.counter}>
+					<span className={styles.current}>{current + 1}</span> /{" "}
+					<span className={styles.total}>{length}</span>
 			</div>
 		</>
 	);
